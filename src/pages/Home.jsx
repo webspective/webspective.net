@@ -57,15 +57,25 @@ function Home() {
 
 
     const ctaButtons = [
-        <a href="/services"><button>Browse Services</button></a>
+        <a href="/plans"><button>Browse Plans</button></a>,
+        <a href="/services"><button>Browse all Services</button></a>
     ]
 
 
     return (
         <>
             <Hero header="Professinal Websites for:" subHeading={subHeading} ctaButtons={ctaButtons} heroImage={heroImage} />
-            <Section>
-
+            <Section header="Our Most Popular Website Plans">
+                <div className="flex flex-row gap-6">
+                    <div className="card">
+                        <img />
+                        <h3></h3>
+                        <p></p>
+                        <ul>
+                            <li>Basic SEO</li>
+                        </ul>
+                    </div>
+                </div>
             </Section>
         </>
     )
