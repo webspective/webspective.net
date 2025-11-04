@@ -18,8 +18,8 @@ function Header() {
             <a id="logo" href="/">WEBSPECTIVE</a>
             <div className="ml-auto gap-8 place-self-center flex flex-row text-xl">
                 <a href="/">Home</a>
+                <a href="/plans">Plans</a>
                 <a href="/services">Services</a>
-                <a href="/about">About Us</a>
                 <a href="/contact">Contact Us</a>
             </div>
         </header>
