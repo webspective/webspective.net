@@ -17,7 +17,7 @@
 
 @layer base {
     body {
-        @apply bg-zinc-900 text-white flex flex-col h-dvh;
+        @apply bg-zinc-950 text-white flex flex-col h-dvh;
     }
 
     header {
@@ -35,6 +35,10 @@
 
     header a {
         @apply text-2xl
+    }
+
+    footer {
+        @apply flex flex-row p-4 border-t-2 border-t-zinc-700 place-content-center
     }
 
     section {

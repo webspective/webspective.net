@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo } from "react"
 import Hero from "../Hero"
 import Section from "../Section"
 import heroImage from "../imgs/heros/home.webp";
-import Card from "../Card";
+import { plans, services } from "../Globals";
 
 function Home() {
 
@@ -66,32 +66,29 @@ function Home() {
     return (
         <>
             <Hero header="Professional and Affordable Websites for:" subHeading={subHeading} ctaButtons={ctaButtons} heroImage={heroImage} />
+
             <Section header="Our Most Popular Website Plans">
                 <div className="grid grid-cols-4 gap-6">
-                    <Card heading="Startup Landing Page" price={99.99} services={["Single-page scroll design", "Custom sections for features, pricing, and CTA", "Fast Load and basic SEO", "Responsive on Mobile Devices"]}>
-                        A modern, high-performing website built to showcase your services, attract customers, and grow your local presence. Perfect for small businesses ready to look professional and compete online.
-                    </Card>
-                    <Card heading="Personal Portfolio" price={249.99} services={["1-3 pages (Home, Projects, Contact)", "Smooth animations and transitions", "Modern typography and color palette", "Optional resume section", "Built for performance and SEO"]}>
-                        A sleek, personalized portfolio built to highlight your craft, skills, and individuality. Perfect for freelancers, students, or professionals who want to stand out with a clean, modern design that leaves a lasting impression.
-                    </Card>
-                    <Card
-                        heading="Blog Site"
-                        price={349.99}
-                        services={[
-                            "Custom blog layout with featured post section",
-                            "Individual post pages with SEO-optimized URLs",
-                            "Search & category filtering",
-                            "Newsletter or subscription form",
-                            "Optional CMS integration (Markdown)"
-                        ]}
-                    >
-                        A content-focused site built for writers, creators, and educators. Share your voice through a beautifully designed, performance-tuned blog that grows with your audience.
-                    </Card>
-
-                    <Card heading="Small Business Site" price={499.99} services={["4-6 page custom site (Home, Services, About, Contact, etc.)", "SEO optimization and Google indexing", "Contact form, booking, or quote system", "Analytics + basic branding integration", "Responsive on Mobile Devices"]}>
-                        A modern, high-performing website built to showcase your services, attract customers, and grow your local presence. Perfect for small businesses ready to look professional and compete online.
-                    </Card>
+                    {plans}
                 </div>
+            </Section>
+
+            <Section header="Extra Website Services at an Affordable Price">
+                <div className="grid grid-cols-3 gap-6">
+                    {services}
+                </div>
+            </Section>
+            <Section header="What is Webspective / About Us">
+                <p className="text-lg">
+                    At Webspective, we build modern, high-performing websites that help small businesses grow their online presence and stand out in a competitive market. From clean, professional designs to reliable hosting and ongoing maintenance, we focus on creating websites that not only look great but also perform seamlessly.
+                    <br />
+                    <br />
+                    Our mission is simple: take the stress out of managing your website so you can focus on running your business. We combine technical expertise, design know-how, and a customer-first approach to deliver websites that attract customers, showcase your services, and drive results.
+                    <br />
+                    <br />
+
+                    Whether you're starting fresh or upgrading an existing site, Webspective is here to provide a complete, worry-free solution — fast, reliable, and tailored to your business needs.
+                </p>
             </Section>
         </>
     )
