@@ -1,96 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
 @utility hero {
-    @apply flex flex-col place-content-center place-items-center gap-6 min-h-full w-full relative
+	@apply flex flex-col place-content-center place-items-center gap-6 min-h-full w-full relative;
 }
 
 @utility card {
-    @apply flex flex-col bg-zinc-800 rounded-2xl overflow-hidden
+	@apply flex flex-col bg-zinc-800 rounded-2xl overflow-hidden;
 }
 
 @utility alt-button {
-    @apply bg-transparent p-0 hover:text-blue-300 hover:underline
+	@apply bg-transparent p-0 hover:text-blue-300 hover:underline;
 }
 
-
 @layer base {
-    body {
-        @apply bg-zinc-950 text-white flex flex-col h-dvh;
-    }
+	body {
+		@apply bg-zinc-950 text-white flex flex-col h-dvh;
+	}
 
-    header {
-        @apply z-100 flex flex-row py-5 px-5 fixed w-full top-0 transition-colors;
-    }
+	header {
+		@apply z-100 flex flex-row py-5 px-5 fixed w-full top-0 transition-colors;
+	}
 
-    p {
-        @apply text-zinc-300
-    }
+	p {
+		@apply text-zinc-300;
+	}
 
+	ul {
+		@apply list-disc list-inside;
+	}
 
-    ul {
-        @apply list-disc list-inside
-    }
+	header a {
+		@apply text-2xl;
+	}
 
-    header a {
-        @apply text-2xl
-    }
+	footer {
+		@apply flex flex-row p-4 border-t-2 border-t-zinc-700 place-content-center;
+	}
 
-    footer {
-        @apply flex flex-row p-4 border-t-2 border-t-zinc-700 place-content-center
-    }
+	section {
+		@apply p-20;
+	}
 
-    section {
-        @apply p-20
-    }
+	h1 {
+		@apply text-5xl font-bold font-["Montserrat"] tracking-wider;
+	}
 
-    h1 {
-        @apply text-5xl font-bold font-["Montserrat"] tracking-wider
-    }
+	h2 {
+		@apply text-4xl;
+	}
 
-    h2 {
-        @apply text-4xl
-    }
+	.card h3 {
+		@apply text-lg font-bold;
+	}
 
-    .card h3 {
-        @apply text-lg font-bold
-    }
+	.card h4 {
+		@apply text-base font-bold;
+	}
 
-    .card h4 {
-        @apply text-base font-bold
-    }
+	.card p,
+	.card li {
+		@apply text-sm;
+	}
 
-    .card p, .card li {
-        @apply text-sm
-    }
+	.hero img {
+		@apply absolute -z-10 brightness-50 h-full w-full;
+	}
 
-    .hero img {
-        @apply absolute -z-10 brightness-50 h-full w-full
-    }
+	#logo {
+		@apply font-["Montserrat"] font-bold tracking-wider text-3xl hover:no-underline hover:text-white;
+	}
 
-    #logo {
-        @apply font-["Montserrat"] font-bold tracking-wider text-3xl;
-    }
+	header a {
+		@apply hover:underline no-underline text-white;
+	}
 
-    a:not(#logo) {
-        @apply transition-colors hover:text-blue-300 hover:underline
-    }
+	a {
+		@apply underline hover:text-blue-300 transition-colors text-blue-300;
+	}
 
-    hr {
-        @apply border-zinc-700
-    }
+	hr {
+		@apply border-zinc-700;
+	}
 
-    a button {
-        @apply text-2xl rounded-2xl transition-colors p-2 px-4 hover:cursor-pointer bg-blue-400 hover:bg-blue-500 text-white
-    }
+	a button {
+		@apply text-2xl rounded-2xl transition-colors p-2 px-4 hover:cursor-pointer bg-blue-400 hover:bg-blue-500 text-white;
+	}
 
-    .card a, .card a button {
-        @apply text-base
-    }
+	.card a,
+	.card a button {
+		@apply text-base;
+	}
 
-    .card a button {
-        @apply py-1 px-2 rounded-xl
-    }
-
+	.card a button {
+		@apply py-1 px-2 rounded-xl;
+	}
 }

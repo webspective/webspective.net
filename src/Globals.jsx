@@ -83,7 +83,7 @@ export const services = [
     </ServiceCard>,
     <ServiceCard
         heading="Website Hosting + Maintenance"
-        price={49.99} // bigger discount to make it feel like a deal
+        price={54.99} // bigger discount to make it feel like a deal
         services={[
             "Fully managed hosting & security monitoring",
             "Performance optimizations (image compression, cache cleanup)",
