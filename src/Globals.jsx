@@ -11,6 +11,7 @@ export const plans = [
             "Fast Load and basic SEO",
             "Responsive on Mobile Devices"
         ]}
+        ctaLink="https://buy.stripe.com/14A28q3Sv6bb3vN0il2oE00"
     >
         A modern, high-performing website built to showcase your services, attract customers, and grow your local presence. Perfect for small businesses ready to look professional and compete online.
     </PlanCard>,
@@ -24,6 +25,8 @@ export const plans = [
             "Optional resume section",
             "Built for performance and SEO"
         ]}
+        ctaLink="https://buy.stripe.com/4gMdR82Or9nnaYf8OR2oE01"
+
     >
         A sleek, personalized portfolio built to highlight your craft, skills, and individuality. Perfect for freelancers, students, or professionals who want to stand out with a clean, modern design that leaves a lasting impression.
     </PlanCard>,
@@ -37,6 +40,7 @@ export const plans = [
             "Newsletter or subscription form",
             "Optional CMS integration (Markdown)"
         ]}
+        ctaLink="https://buy.stripe.com/00weVc88LfLL9Ub1mp2oE02"
     >
         A content-focused site built for writers, creators, and educators. Share your voice through a beautifully designed, performance-tuned blog that grows with your audience.
     </PlanCard>,
@@ -51,6 +55,7 @@ export const plans = [
             "Analytics + basic branding integration",
             "Responsive on Mobile Devices"
         ]}
+        ctaLink="https://buy.stripe.com/14A3cu4Wz0QRd6n1mp2oE03"
     >
         A modern, high-performing website built to showcase your services, attract customers, and grow your local presence. Perfect for small businesses ready to look professional and compete online.
     </PlanCard>
@@ -66,6 +71,7 @@ export const services = [
             "Automatic updates and uptime management",
             "Fully managed setup, no technical work required"
         ]}
+        ctaLink="https://buy.stripe.com/4gMaEWcp17ff3vNc132oE04"
     >
         Reliable, high-performance hosting managed by Webspective. Your site stays online, secure, and optimized with expert server management and active monitoring no setup, no stress, just a fast and seamless experience for your visitors.
     </ServiceCard>,
@@ -78,6 +84,7 @@ export const services = [
             "Minor content edits (e.g., text or image swaps, small layout fixes)",
             "Priority email support for technical issues"
         ]}
+        ctaLink="https://buy.stripe.com/00waEWbkX2YZear6GJ2oE05"
     >
         Keep your website fast, secure, and worry-free with ongoing maintenance from Webspective. We handle updates, performance optimization, and security monitoring so your site stays reliable, professional, and ready to impress while you focus on running your business.
     </ServiceCard>,
@@ -91,6 +98,7 @@ export const services = [
             "Minor content edits (e.g., text or image swaps, small layout fixes)",
             "Priority email support for technical issues"
         ]}
+        ctaLink="https://buy.stripe.com/28E3cufBdfLLaYf9SV2oE06"
     >
         Take the stress out of managing your website with Webspective's all-in-one plan. We combine fast, reliable hosting with ongoing maintenance, security, and performance management, so your site stays professional, optimized, and ready to impress all for a single, discounted monthly price.
     </ServiceCard>
